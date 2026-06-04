@@ -23,4 +23,6 @@ package = true
 dev = [
     "pytest>=8.4.0",
     "respx>=0.22.0",
+    "ruff>=0.15.16",
+    "ty>=0.0.43",
 ]
