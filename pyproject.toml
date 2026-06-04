@@ -1,0 +1,26 @@
+[project]
+name = "podload"
+version = "0.1.0"
+description = "Download podcast episodes from RSS feeds"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "feedparser>=6.0.11",
+    "httpx>=0.28.1",
+]
+
+[project.scripts]
+podload = "podload.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+package = true
+
+[dependency-groups]
+dev = [
+    "pytest>=8.4.0",
+    "respx>=0.22.0",
+]
